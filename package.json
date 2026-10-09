@@ -1,15 +1,12 @@
 {
-  "name": "",
-  "version": "",
-  "description": "",
-  "author": "",
+  "name": "a2-aishwaryasilam-webware",
+  "version": "1.0.0",
+  "description": "Habit Tracker",
+  "main": "server.improved.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.improved.js"
   },
   "dependencies": {
-    "mime": "^2.4.4"
-  },
-  "engines": {
-     "node":"24.x"
+    "mime-types": "^3.0.1"
   }
 }

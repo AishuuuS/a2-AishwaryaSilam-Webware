@@ -1,18 +1,47 @@
-<!doctype html>
-<html lang='en'>
-  <head>
-    <title>CS4241 Assignment 2</title>
-    <meta charset='utf-8' />
-    <script src='js/main.js'></script>
-    <link rel='stylesheet' href='css/main.css' />
-    
-    <!-- get rid of favicon error -->
-    <link rel='icon' href='data:;base64,iVBORw0KGgo=' />
-  </head>
-  <body>
-    <form>
-      <input type='text' id='yourname' value='your name here'>
-      <button>submit</button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Habit Tracker</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Habit Tracker</h1>
+
+    <form id="habit-form" onsubmit="return false;">
+      <input type="hidden" id="habit-id" />
+      <input type="text" id="habit-name" placeholder="Habit Name" required />
+      <select id="habit-frequency" required>
+        <option value="" disabled selected>Frequency</option>
+        <option value="1">Daily</option>
+        <option value="7">Weekly</option>
+        <option value="30">Monthly</option>
+        <option value="custom">Custom (days)</option>
+      </select>
+      <input type="number" id="habit-custom-frequency" placeholder="Enter days" min="1" style="display:none;" />
+      <button type="submit" id="submit-btn">Add Habit</button>
     </form>
-  </body>
+
+    <table id="habit-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Frequency (in days)</th>
+          <th>Next Due</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <!-- Updated path for JS -->
+  <script src="js/main.js"></script>
+</body>
 </html>
+

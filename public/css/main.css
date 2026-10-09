@@ -1,4 +1,78 @@
 body {
-  background:black;
-  color:white;
+  font-family: 'Inter', sans-serif;
+  background-color: #f0f4f8;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  color: black;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"], input[type="number"], select {
+  padding: 12px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  flex: 1 1 150px;
+}
+
+button {
+  padding: 8px 12px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #c90664;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #800440;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background-color: #c90664;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.overdue {
+  color: white;
+  background-color: red;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 4px;
+  padding: 2px 5px;
 }
