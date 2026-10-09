@@ -2,9 +2,9 @@
   "name": "a2-aishwaryasilam-webware",
   "version": "1.0.0",
   "description": "Habit Tracker",
-  "main": "server.improved.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node server.improved.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "mime-types": "^3.0.1"
