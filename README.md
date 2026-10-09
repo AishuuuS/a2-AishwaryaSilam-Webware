@@ -1,9 +1,9 @@
 # Aishwarya Silam - Habit Tracker
 ## Assignment 2 
 
-## Render link: ------
+## Render link: (https://a2-aishwaryasilam-webware.onrender.com)
 
-This application is a simple full-stack webpage that allows users to add/delete and edit personal habits that they want to track. Each habit can be logged with a description, frequency(in days), and the "next due date" of the habit. This uses a custom Node.js server to handle the static file serving and a REST APIL to manage the habits.
+This application is a simple webpage that allows users to add/delete and edit personal habits that they want to track. Each habit can be logged with a description, frequency(in days), and the "next due date" of the habit. This uses a custom Node.js server to handle the static file serving and a REST API to manage the habits.
 
 To add a habit you can type in the info that is requested to be provided at the top of the screen and the habit will be added onto the list below. 
 
